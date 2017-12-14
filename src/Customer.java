@@ -1,6 +1,7 @@
 public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
+    protected CustomerController customerController;
 
     public String getAddress() {
         return address;
@@ -17,4 +18,7 @@ public class Customer extends Person {
     public void setCreditCardNumber(int creditCardNumber) {
         this.creditCardNumber = creditCardNumber;
     }
+}
+class CustomerController{
+    Cart cart;
 }
