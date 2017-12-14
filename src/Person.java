@@ -2,6 +2,12 @@ public class Person {
     protected String name,email,password;
     protected int id;
 
+    public Person(String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
     public String getName() {
         return name;
     }

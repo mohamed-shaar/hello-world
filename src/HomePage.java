@@ -13,8 +13,22 @@ public class HomePage {
         return currentUser!=null;
     }
     private static boolean register(){
-        //todo
-        return false;
+        cin=new Scanner(System.in);
+        System.out.println("1.Customer\n2.StoreOwner\n3.Admin");
+        int choice=cin.nextInt();
+        String name=cin.nextLine();
+        String email=cin.nextLine();
+        String password=cin.nextLine();
+        if(choice==1){
+            Database.addCustomer(new Customer(name,email,password));
+        }
+        else if(choice==2){
+            Database.addStoreOwner(new StoreOwner(name,email,password));
+        }
+        else{
+            Database.addAdmin(new Admin(name,email,password));
+        }
+        return true;
     }
     public static void main(String[] args) {
         System.out.println("1.login\n2.Register");
@@ -28,7 +42,12 @@ public class HomePage {
             }
         }
         else{
-            register();
+            if(register()){
+                System.out.println("Registered successfully");
+            }
+            else{
+                System.out.println("Registeration failed");
+            }
         }
     }
 }

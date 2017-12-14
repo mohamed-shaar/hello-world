@@ -2,6 +2,12 @@ public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
     protected CustomerController customerController;
+    protected CustomerView customerView;
+
+    public Customer(String name, String email, String password) {
+        super(name,email,password);
+    }
+
 
     public String getAddress() {
         return address;
@@ -21,4 +27,7 @@ public class Customer extends Person {
 }
 class CustomerController{
     Cart cart;
+}
+class CustomerView{
+
 }
