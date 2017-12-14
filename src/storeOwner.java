@@ -1,2 +1,2 @@
-public class storeOwner {
+public class StoreOwner extends Person {
 }
