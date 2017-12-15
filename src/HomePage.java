@@ -3,51 +3,68 @@ import java.util.Scanner;
 
 public class HomePage {
     private static Person currentUser=null;
-    private static Scanner cin=null;
     private static boolean login(){
-        System.out.println("Enter email and password");
-        cin=new Scanner(System.in);
-        String name=cin.next();
-        String password=cin.next();
-        currentUser= Database.verifyLoginType(name,password);
+        Scanner cin=new Scanner(System.in);
+        System.out.print("Enter email: ");
+        String email=cin.nextLine();
+        System.out.print("Enter password: ");
+        String password=cin.nextLine();
+        currentUser= Database.verifyLoginType(email,password);
         return currentUser!=null;
     }
     private static boolean register(){
-        cin=new Scanner(System.in);
+        Scanner cin=new Scanner(System.in);
         System.out.println("1.Customer\n2.StoreOwner\n3.Admin");
-        int choice=cin.nextInt();
+        String choice=cin.nextLine();
+        System.out.print("Enter name: ");
         String name=cin.nextLine();
+        System.out.print("Enter email: ");
         String email=cin.nextLine();
+        System.out.print("Enter password: ");
         String password=cin.nextLine();
-        if(choice==1){
+        if(Database.checkEmailAvailability(email)){
+            return false;
+        }
+        if(choice.equals("1")){
             Database.addCustomer(new Customer(name,email,password));
         }
-        else if(choice==2){
+        else if(choice.equals("2")){
             Database.addStoreOwner(new StoreOwner(name,email,password));
         }
-        else{
+        else if(choice.equals("3")){
             Database.addAdmin(new Admin(name,email,password));
         }
         return true;
     }
+    private static void cleanConsole(){
+        System.out.println("************");
+        System.out.println("*1.login****\n*2.Register*");
+        System.out.println("************");
+    }
     public static void main(String[] args) {
-        System.out.println("1.login\n2.Register");
-        cin=new Scanner(System.in);
-        if(cin.nextInt()==1){
-            if(login()){
-                System.out.println("login successfully");
+        Scanner cin=new Scanner(System.in);
+        while(true){
+            cleanConsole();
+
+            if(cin.nextInt()==1){
+                if(login()){
+                    System.out.println("login successfully");
+                    System.out.println("Welcome back "+currentUser.getName());
+                    //currentUser.main();
+                }
+                else{
+                    System.out.println("login failed");
+                }
             }
             else{
-                System.out.println("login failed");
+                if(register()){
+                    System.out.println("Registered successfully");
+                }
+                else{
+                    System.out.println("Registration failed");
+                }
             }
         }
-        else{
-            if(register()){
-                System.out.println("Registered successfully");
-            }
-            else{
-                System.out.println("Registeration failed");
-            }
-        }
+
     }
 }
