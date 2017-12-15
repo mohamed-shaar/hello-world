@@ -43,5 +43,25 @@ public class Database {
     public static void addStore(Store store){
         stores.add(store);
     }
-    public static void removeBrand(Brand brand){ brands.remove(brand); }
+    public static void removeBrand(Brand brand){
+        brands.remove(brand);
+    }
+    public static boolean checkEmailAvailability(String email){
+        for(Customer customer:customers){
+            if(customer.getEmail().equals(email)){
+                return true;
+            }
+        }
+        for(StoreOwner storeOwner:storeOwners){
+            if(storeOwner.getEmail().equals(email)){
+                return true;
+            }
+        }
+        for(Admin admin:admins){
+            if(admin.getEmail().equals(email)){
+                return true;
+            }
+        }
+        return false;
+    }
 }
