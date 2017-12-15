@@ -1,9 +1,24 @@
 import java.util.Vector;
-
 public class Product {
     protected String name;
     protected double price;
-    protected Brand brand;
+    protected String category;
+    public void setName(String name) {
+        this.name = name;
+    }
+    public double getPrice() {
+        return price;
+    }
+    public void setPrice(double price) {
+        this.price = price;
+    }
+    public Product(String name, double price, String category, String brand) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.brand = brand;
+    }
+    protected String brand;
     protected int searchcounter;
     protected int boughtcounter;
     protected ProductController productController;

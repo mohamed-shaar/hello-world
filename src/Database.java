@@ -5,8 +5,9 @@ public class Database {
     protected static Vector<StoreOwner>storeOwners=new Vector<>();
     protected static Vector<Admin>admins=new Vector<>();
     protected static Vector<Product>products=new Vector<>();
-    protected static Vector<Brand>brands=new Vector<>();
+    protected static Vector<String>brands=new Vector<>();
     protected static Vector<Store>stores=new Vector<>();
+    protected static Vector<String>suggestions=new Vector<>();
     public static Person verifyLoginType(String email,String password){
         for(Customer customer:customers){
             if(customer.getEmail().equals(email)&&customer.getPassword().equals(password)){
@@ -37,13 +38,16 @@ public class Database {
     public static void addProduct(Product product){
         products.add(product);
     }
-    public static void addBrand(Brand brand){
+    public static void addBrand(String brand){
         brands.add(brand);
     }
     public static void addStore(Store store){
         stores.add(store);
     }
-    public static void removeBrand(Brand brand){
+    public static void addSuggestion(String suggestion){
+        suggestions.add(suggestion);
+    }
+    public static void removeBrand(String brand){
         brands.remove(brand);
     }
     public static boolean checkEmailAvailability(String email){
