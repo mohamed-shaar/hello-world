@@ -1,4 +1,3 @@
-import javax.xml.crypto.Data;
 import java.util.Scanner;
 
 public class HomePage {
@@ -36,7 +35,7 @@ public class HomePage {
         }
         return true;
     }
-    private static void cleanConsole(){
+    private static void welcomeMessage(){
         System.out.println("************");
         System.out.println("*1.login****\n*2.Register*");
         System.out.println("************");
@@ -44,8 +43,7 @@ public class HomePage {
     public static void main(String[] args) {
         Scanner cin=new Scanner(System.in);
         while(true){
-            cleanConsole();
-
+            welcomeMessage();
             if(cin.nextInt()==1){
                 if(login()){
                     System.out.println("login successfully");
