@@ -2,39 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1168f24c-f01f-4ae9-87a0-3c9b88585882" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Voucher.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Admin.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Admin.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/AdminController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/AdminController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/AdminView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/AdminView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Brand.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/BrandController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Cart.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/CartController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Customer.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Customer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/CustomerController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/CustomerController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/CustomerView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/CustomerView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Database.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Database.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Order.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/OrderController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Person.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Person.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Product.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Product.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ProductController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ProductController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Store.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Store.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwner.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwner.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerView.class" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" afterPath="$PROJECT_DIR$/src/Admin.java" />
-      <change beforePath="$PROJECT_DIR$/src/Brand.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Cart.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" afterPath="$PROJECT_DIR$/src/Customer.java" />
-      <change beforePath="$PROJECT_DIR$/src/Database.java" afterPath="$PROJECT_DIR$/src/Database.java" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" afterPath="$PROJECT_DIR$/src/Person.java" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" afterPath="$PROJECT_DIR$/src/Product.java" />
-      <change beforePath="$PROJECT_DIR$/src/Store.java" afterPath="$PROJECT_DIR$/src/Store.java" />
-      <change beforePath="$PROJECT_DIR$/src/storeOwner.java" afterPath="$PROJECT_DIR$/src/StoreOwner.java" />
+      <change beforePath="$PROJECT_DIR$/src/storeOwner.java" afterPath="$PROJECT_DIR$/src/storeOwner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
