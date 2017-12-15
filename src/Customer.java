@@ -1,3 +1,5 @@
+import java.util.Vector;
+
 public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
@@ -29,5 +31,10 @@ class CustomerController{
     Cart cart;
 }
 class CustomerView{
-
+    protected static Vector<Store> Stores = new Vector<Store>();
+    public static void viewallStore(){
+        for (Store store:Stores){
+            //store.storeController;
+        }
+    }
 }

@@ -43,7 +43,5 @@ public class Database {
     public static void addStore(Store store){
         stores.add(store);
     }
-    public static void removeBrand(Brand brand){
-        brands.remove(brand);
-    }
+    public static void removeBrand(Brand brand){ brands.remove(brand); }
 }
