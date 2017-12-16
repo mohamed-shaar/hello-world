@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Vector;
-public class StoreOwner extends Person {
+class StoreOwner extends Person {
     protected StoreOwnerView storeOwnerView;
     public StoreOwner(String name, String email, String password) {
         super(name,email,password);
@@ -25,8 +25,8 @@ class StoreOwnerController{
     }
 }
 class StoreOwnerView{
-    protected StoreOwnerController storeOwnerController=new StoreOwnerController();
-    public void addStore(){
+    protected static StoreOwnerController storeOwnerController=new StoreOwnerController();
+    public static void addStore(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter store name: ");
         String name=cin.nextLine();
@@ -36,7 +36,7 @@ class StoreOwnerView{
         String address=cin.nextLine();
         storeOwnerController.addStore(new Store(name,type,address));
     }
-    public void addProduct(){
+    public static void addProduct(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter store name you would like to add product in it: ");
         String storeName=cin.nextLine();
@@ -49,7 +49,7 @@ class StoreOwnerView{
             System.out.println("Store not found");
         }
     }
-    public void suggestAddingProductToDatabase(){
+    public static void suggestAddingProductToDatabase(){
         Scanner cin=new Scanner(System.in);
         System.out.println("Enter product name and a brief description\nAdmin should revise your suggestion within 24 hours.");
         String suggestion=cin.nextLine();
