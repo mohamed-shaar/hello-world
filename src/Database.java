@@ -68,4 +68,10 @@ public class Database {
         }
         return false;
     }
+    public static void viewStores(){
+        System.out.println(stores);
+    }
+    public static Store getStore(int index){
+        return stores.get(index);
+    }
 }

@@ -15,9 +15,6 @@ class AdminController{
     public void removeBrand(String brand){
         Database.removeBrand(brand);
     }
-    public void provideVouchers(Customer customer){
-        customer.getCustomerView().customerController.voucher.points++;
-    }
 }
 class AdminView{
     protected AdminController adminController=new AdminController();

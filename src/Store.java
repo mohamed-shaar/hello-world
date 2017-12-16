@@ -36,8 +36,14 @@ public class Store {
     }
 }
 class StoreController{
-    protected static Vector<Product>products = new Vector<>();
+    protected Vector<Product>products = new Vector<>();
+    public Vector<Product> getAllProducts(){
+        return products;
+    }
     public void addProduct(Product product){ products.add(product);}
+    public Product getProduct(int index){
+        return products.get(index);
+    }
 }
 class StoreView{
     protected StoreController storeController=new StoreController();
@@ -54,10 +60,17 @@ class StoreView{
         storeController.addProduct(new Product(name,Double.parseDouble(price),category,brand));
         System.out.println("Product has been added!");
     }
-    public static void viewProducts(){
-       /* for (Store store:stores) {
-            //System.out.println(store.storeController.products.getname());//problem: can not see product name.
-        }*/
+    public void exploreProducts()
+    {
+        Scanner cin=new Scanner(System.in);
+        Vector<Product>products=storeController.getAllProducts();
+        System.out.println(products);
+        System.out.print("Enter product number you would like to explore: ");
+        int choice=cin.nextInt();
+        Product currentProduct=storeController.getProduct(choice);
+
+
     }
-    public static void viewBrands(){}
+    public void viewBrands(){}
+
 }

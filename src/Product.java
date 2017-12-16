@@ -27,19 +27,18 @@ public class Product {
     public String getName() { return name; }
 }
 class ProductController{
-    protected Vector<Product>products = new Vector<>();
-    public Product returnsearchcounter(){
+    /*public Product returnsearchcounter(){
         Product temp = products.get(0);
         for (Product p:products){
             if(p.searchcounter > temp.searchcounter){ temp = p;}
         }
         return temp;
-    }
-    public Product returnboughtcounter(){
+    }*/
+    /*public Product returnboughtcounter(){
         Product temp = products.get(0);
         for (Product p:products){
             if(p.boughtcounter > temp.boughtcounter){ temp = p;}
         }
         return temp;
-    }
+    }*/
 }
