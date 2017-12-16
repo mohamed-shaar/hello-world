@@ -56,4 +56,19 @@ class StoreOwnerView{
         storeOwnerController.addSuggestion(suggestion);
         System.out.println("Your suggestion has been sent!");
     }
+    public static void main(String[] args){
+        while(true){
+            System.out.println("Choose what you want to do\n1- add Stroe\n2- add Product\n3- suggest Product\n4- Exit");
+            Scanner cin=new Scanner(System.in);
+            if(cin.nextInt()==1){
+                addStore();
+            }else if(cin.nextInt()==2){
+                addProduct();
+            }else if(cin.nextInt()==3){
+                suggestAddingProductToDatabase();
+            }else{
+                break;
+            }
+        }
+    }
 }
