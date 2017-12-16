@@ -4,6 +4,10 @@ public class Admin extends Person {
     public Admin(String name, String email, String password) {
         super(name,email,password);
     }
+
+    public void getView() {
+        adminView.main();
+    }
 }
 class AdminController{
     public void addBrand(String brand){
@@ -19,11 +23,9 @@ class AdminController{
         customer.voucher.points++;
     }
 }
-
-
-
 class AdminView{
     public  void main() {
+        System.out.println("maaaain");
         boolean x=true;
         Scanner scan= new Scanner(System.in);
         while(x){
@@ -38,11 +40,6 @@ class AdminView{
             }
         }
     }
-    
-    
-    
-    
-    
     
     protected AdminController adminController=new AdminController();
     static void commands(){

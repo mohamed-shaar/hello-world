@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
     protected String name,email,password;
     protected int id;
     public Person(String name, String email, String password) {
@@ -30,4 +30,5 @@ public class Person {
     public void setId(int id) {
         this.id = id;
     }
+    public abstract void getView();
 }

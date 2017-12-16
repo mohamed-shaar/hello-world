@@ -48,7 +48,7 @@ public class HomePage {
                 if(login()){
                     System.out.println("login successfully");
                     System.out.println("Welcome back "+currentUser.getName());
-                    //currentUser.main();
+                    currentUser.getView();
                 }
                 else{
                     System.out.println("login failed");

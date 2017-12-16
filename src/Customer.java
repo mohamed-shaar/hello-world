@@ -7,6 +7,11 @@ public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
     protected CustomerView customerView=new CustomerView();
+
+    public void getView() {
+        customerView.main();
+    }
+
     protected Voucher voucher=new Voucher(0);
     public Customer(String name, String email, String password) {
         super(name,email,password);
@@ -48,5 +53,9 @@ class CustomerView{
         int choice=cin.nextInt();
         Store currentStore=Database.getStore(choice);
         currentStore.getStoreView().exploreProducts();
+    }
+    public void main(){
+        exploreStores();
+
     }
 }
