@@ -15,9 +15,39 @@ class AdminController{
     public void removeBrand(String brand){
         Database.removeBrand(brand);
     }
+    public void provideVouchers(Customer customer){
+        customer.getCustomerView().customerController.voucher.points++;
+    }
 }
+
+
+
 class AdminView{
+    public  void main() {
+        boolean x=true;
+        Scanner scan= new Scanner(System.in);
+        while(x){
+            commands();
+            switch (scan.nextInt()){
+                case 1: this.addProduct();
+                case 2: this.addBrand();
+                case 3: this.provideVouchers();
+                case 4: x=false;
+                default:System.out.println("enter something ");
+                    
+            }
+        }
+    }
+    
+    
+    
+    
+    
+    
     protected AdminController adminController=new AdminController();
+    static void commands(){
+        System.out.println("1. add product\n2. add brand" +
+                           "\n3. provide vouchers\n4. Exit ");}
     public void addProduct(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter product name: ");
@@ -39,6 +69,19 @@ class AdminView{
         System.out.println("Brand has been added!");
     }
     public void provideVouchers(){
-
+        Scanner scan=new Scanner(System.in);
+        System.out.println("enter customer Email");
+        String mail=scan.nextLine();
+        System.out.println("enter number of points");
+        
+        int point=scan.nextInt();
+        
+        for(int i=0;i<Database.customers.size();i++){
+            if(mail.equals(Database.customers.get(i).email)){
+                Database.customers.get(i).control.voucher.points+=point;
+            }
+        }
+        
+        
     }
 }
