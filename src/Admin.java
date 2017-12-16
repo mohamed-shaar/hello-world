@@ -16,7 +16,7 @@ class AdminController{
         Database.removeBrand(brand);
     }
     public void provideVouchers(Customer customer){
-        customer.getCustomerView().customerController.voucher.points++;
+        customer.voucher.points++;
     }
 }
 
@@ -78,7 +78,7 @@ class AdminView{
         
         for(int i=0;i<Database.customers.size();i++){
             if(mail.equals(Database.customers.get(i).email)){
-                Database.customers.get(i).control.voucher.points+=point;
+                adminController.provideVouchers(Database.customers.get(i));
             }
         }
         
