@@ -59,9 +59,18 @@ class StoreOwnerView{
         storeOwnerController.addSuggestion(suggestion);
         System.out.println("Your suggestion has been sent!");
     }
-    public void exploreStores(){}
-    public void exploreViews(){}
-    public void getMostViewed(){}
+    public void exploreStores(){
+
+    }
+    public void exploreViews(){
+        Database.viewCounters();
+    }
+    public void getMostViewed(){
+        Database.mostViewed();
+    }
+    public void getMostBought(){
+        Database.mostBought();
+    }
     public void main(){
         while(true){
             System.out.println("Choose what you want to do\n1- Add Store\n2- Add Product\n3- Suggest Product\n4- Explore store" +

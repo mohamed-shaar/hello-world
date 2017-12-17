@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class HomePage {
-    private static Person currentUser=null;
+    public static Person currentUser=null;
+    public static Customer getCurrentCustomer(){
+        return new Customer(currentUser.name,currentUser.email,currentUser.password);
+    }
     private static boolean login(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter email: ");
@@ -37,7 +40,7 @@ public class HomePage {
     }
     private static void welcomeMessage(){
         System.out.println("************");
-        System.out.println("*1.login****\n*2.Register*\n*3.Exit*****");
+        System.out.println("*1.login   *\n*2.Register*\n*3.Exit    *");
         System.out.println("************");
     }
     public static void main(String[] args) {

@@ -42,7 +42,7 @@ public class Store {
     }
 }
 class StoreController{
-    protected Vector<Product>products = new Vector<>();
+    public Vector<Product>products = new Vector<>();
     public Vector<Product> getAllProducts(){
         return products;
     }
@@ -80,7 +80,7 @@ class StoreView{
         if(currentProduct==null){
             System.out.println("Cannot find!");
         }
-        //currentProduct.explore();
+        currentProduct.productView.exploreProduct(currentProduct);
     }
     public void viewBrands(){}
 

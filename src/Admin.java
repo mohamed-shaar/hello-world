@@ -27,7 +27,7 @@ class AdminView{
     protected AdminController adminController=new AdminController();
     static void commands(){
         System.out.println("1. Add product\n2. Add brand" +
-                "\n3. Provide vouchers\n4. Explore stores\n 5. View suggestions\n6. Exit ");}
+                "\n3. Provide vouchers\n4. Explore stores\n5. View suggestions\n6. Exit ");}
     protected void addProduct(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter product name: ");

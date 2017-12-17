@@ -2,6 +2,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 import java.util.Vector;
 public class Database {
@@ -93,6 +95,30 @@ public class Database {
     public static Store getStore(int index){
         if(index<0||index>stores.size()) return null;
         return stores.get(index);
+    }
+    public static void viewCounters(){
+        for(Product product:products){
+            System.out.println(product.getName()+" Number of views: "+product.getSearchcounter()+" Number of buys: "+product.getBoughtcounter());
+
+        }
+    }
+    public static void mostViewed(){
+        Collections.sort(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return Integer.compare(o2.getSearchcounter(),o1.getSearchcounter());
+            }
+        });
+        System.out.println(products.get(0).getName()+" viewed "+products.get(0).searchcounter+" times");
+    }
+    public static void mostBought(){
+        Collections.sort(products, new Comparator<Product>() {
+            @Override
+            public int compare(Product o1, Product o2) {
+                return Integer.compare(o2.getBoughtcounter(),o1.getBoughtcounter());
+            }
+        });
+        System.out.println(products.get(0).getName()+" bought "+products.get(0).boughtcounter+" times");
     }
 
     public static void loadCustomers(){

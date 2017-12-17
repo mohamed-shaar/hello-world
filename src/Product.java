@@ -1,8 +1,10 @@
+import java.util.Scanner;
 import java.util.Vector;
 public class Product {
     protected String name;
     protected double price;
     protected String category;
+    public ProductView productView=new ProductView();
     public void setName(String name) {
         this.name = name;
     }
@@ -24,6 +26,15 @@ public class Product {
     protected ProductController productController;
     public void increasesearchcounter(){searchcounter++;}
     public void increaseboughtcounter(){boughtcounter++;}
+
+    public int getSearchcounter() {
+        return searchcounter;
+    }
+
+    public int getBoughtcounter() {
+        return boughtcounter;
+    }
+
     public String getName() { return name; }
 
     @Override
@@ -37,18 +48,35 @@ public class Product {
     }
 }
 class ProductController{
-    /*public Product returnsearchcounter(){
-        Product temp = products.get(0);
-        for (Product p:products){
-            if(p.searchcounter > temp.searchcounter){ temp = p;}
+    protected boolean purchase(Product product){
+        Customer current=HomePage.getCurrentCustomer();
+        return current.voucher.purchase(product);
+    }
+}
+class ProductView{
+    protected ProductController productController=new ProductController();
+    protected void viewDetails(Product product){
+        System.out.println(product);
+        product.increasesearchcounter();
+    }
+    protected void purchase(Product product){
+        if(productController.purchase(product)){
+            System.out.println("Successfully purchased");
+            product.increaseboughtcounter();
         }
-        return temp;
-    }*/
-    /*public Product returnboughtcounter(){
-        Product temp = products.get(0);
-        for (Product p:products){
-            if(p.boughtcounter > temp.boughtcounter){ temp = p;}
+        else System.out.println("No enough credits");
+    }
+
+    protected void exploreProduct(Product product){
+        System.out.println("1.View details\n2.Purchase");
+        Scanner cin=new Scanner(System.in);
+        int choice=cin.nextInt();
+        if(choice==1){
+            viewDetails(product);
         }
-        return temp;
-    }*/
+        else if(choice==2){
+            purchase(product);
+        }
+    }
+
 }
