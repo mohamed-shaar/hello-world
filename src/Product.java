@@ -4,6 +4,7 @@ public class Product {
     protected String name;
     protected double price;
     protected String category;
+    public ProductView productView=new ProductView();
     public void setName(String name) {
         this.name = name;
     }
@@ -43,9 +44,10 @@ class ProductController{
 }
 class ProductView{
     protected ProductController productController=new ProductController();
-    protected void viewDetails(Product product){
+    protected String viewDetails(Product product){
         System.out.println(product);
         product.increasesearchcounter();
+        return product.toString();
     }
     protected void purchase(Product product){
         if(productController.purchase(product)){

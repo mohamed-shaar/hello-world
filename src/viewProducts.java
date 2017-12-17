@@ -11,13 +11,15 @@ public class viewProducts {
     public JTextArea product;
     public JButton exploreButton;
     public JButton viewButton;
+    private JButton purchasebtn;
+    private Store currentStore;
 
     public viewProducts() {
         exploreButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int choice = Integer.parseInt(textField1.getText());
-                Store currentStore = Database.getStore(choice);
+                currentStore = Database.getStore(choice);
                 if (currentStore == null) {
                     JOptionPane.showMessageDialog(explore,"Cannot find store");
                 } else
@@ -25,16 +27,34 @@ public class viewProducts {
 
             }
         });
-        textField2.addActionListener(new ActionListener() {
+        viewButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                StoreController storeController = new StoreController();
                 int choice=Integer.parseInt(textField2.getText());
-                Product currentProduct = storeController.getProduct(choice);
+                Product currentProduct = currentStore.getStoreView().storeController.getProduct(choice);
                 if (currentProduct == null) {
                     JOptionPane.showMessageDialog(explore,"Cannot find!");
                 }else {
+                    JOptionPane.showMessageDialog(explore,currentProduct.toString());
+                    currentProduct.productView.viewDetails(currentProduct);
                     product.append(currentProduct.print());
+                }
+            }
+        });
+        purchasebtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int choice=Integer.parseInt(textField2.getText());
+                Product currentProduct =  currentStore.getStoreView().storeController.getProduct(choice);
+                if (currentProduct == null) {
+                    JOptionPane.showMessageDialog(explore,"Cannot find!");
+                }else {
+                    if(!new Customer().voucher.purchase(currentProduct)){
+                        JOptionPane.showMessageDialog(explore,"Transaction has failed!");
+                    }
+                    else{
+                        JOptionPane.showMessageDialog(explore,"Transaction has succeeded!");
+                    }
                 }
             }
         });

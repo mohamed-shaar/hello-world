@@ -3,7 +3,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class cust {
-    public JButton purchaseButton;
     public JButton addSuggestionButton;
     public JButton exploreStoresButton;
     public JPanel customer;

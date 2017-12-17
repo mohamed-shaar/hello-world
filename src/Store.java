@@ -6,7 +6,7 @@ public class Store {
     protected String name;
     protected String type;
     protected String address;
-    protected StoreView storeView = new StoreView();
+    protected StoreView storeView = new StoreView(this);
 
     public Store(String name, String type, String address) {
         this.name = name;
@@ -69,7 +69,10 @@ class StoreController {
 
 class StoreView {
     protected StoreController storeController = new StoreController();
-
+    public Store currentStore;
+    StoreView(Store store){
+        this.currentStore=store;
+    }
     public void addProduct() {
         Scanner cin = new Scanner(System.in);
         System.out.print("Enter product name: ");
