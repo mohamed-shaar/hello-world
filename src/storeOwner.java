@@ -1,11 +1,10 @@
 import java.util.Scanner;
 import java.util.Vector;
 class StoreOwner extends Person {
-    protected StoreOwnerView storeOwnerView;
+    protected StoreOwnerView storeOwnerView=new StoreOwnerView();
     public StoreOwner(String name, String email, String password) {
         super(name,email,password);
     }
-
     public void getView() {
         storeOwnerView.main();
     }
@@ -60,11 +59,7 @@ class StoreOwnerView{
         storeOwnerController.addSuggestion(suggestion);
         System.out.println("Your suggestion has been sent!");
     }
-<<<<<<< HEAD
-    public static void main(){
-=======+
-    public static void main(String[] args){
->>>>>>> origin/master
+    public void main(){
         while(true){
             System.out.println("Choose what you want to do\n1- add Stroe\n2- add Product\n3- suggest Product\n4- Exit");
             Scanner cin=new Scanner(System.in);

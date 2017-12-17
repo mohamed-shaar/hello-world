@@ -5,11 +5,13 @@ public class Store {
     protected String type;
     protected String address;
     protected StoreView storeView=new StoreView();
+    public Store(String name, String type, String address) {
+        this.name = name;
+        this.type = type;
+        this.address = address;
+    }
     public StoreView getStoreView() {
         return storeView;
-    }
-    public void setStoreView(StoreView storeView) {
-        this.storeView = storeView;
     }
     public String getName() {
         return name;
@@ -29,11 +31,7 @@ public class Store {
     public void setAddress(String address) {
         this.address = address;
     }
-    public Store(String name, String type, String address) {
-        this.name = name;
-        this.type = type;
-        this.address = address;
-    }
+
 }
 class StoreController{
     protected Vector<Product>products = new Vector<>();
@@ -42,6 +40,9 @@ class StoreController{
     }
     public void addProduct(Product product){ products.add(product);}
     public Product getProduct(int index){
+        if(index<0||index>products.size()){
+            return null;
+        }
         return products.get(index);
     }
 }
@@ -68,8 +69,10 @@ class StoreView{
         System.out.print("Enter product number you would like to explore: ");
         int choice=cin.nextInt();
         Product currentProduct=storeController.getProduct(choice);
-
-
+        if(currentProduct==null){
+            System.out.println("Cannot find!");
+        }
+        //currentProduct.explore();
     }
     public void viewBrands(){}
 

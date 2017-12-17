@@ -3,31 +3,17 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class Customer extends Person {
-    protected CustomerController control=new CustomerController();
     protected String address;
     protected int creditCardNumber;
     protected CustomerView customerView=new CustomerView();
-
+    protected Voucher voucher=new Voucher(0);
     public void getView() {
         customerView.main();
     }
-
-    protected Voucher voucher=new Voucher(0);
     public Customer(String name, String email, String password) {
         super(name,email,password);
     }
-    public String getAddress() {
-        return address;
-    }
-    public void setAddress(String address) {
-        this.address = address;
-    }
-    public int getCreditCardNumber() {
-        return creditCardNumber;
-    }
-    public void setCreditCardNumber(int creditCardNumber) {
-        this.creditCardNumber = creditCardNumber;
-    }
+
 }
 class CustomerController{
     public boolean purchase(Voucher voucher,Product product){
@@ -52,6 +38,9 @@ class CustomerView{
         System.out.print("Enter store number to explore: ");
         int choice=cin.nextInt();
         Store currentStore=Database.getStore(choice);
+        if(currentStore==null){
+            System.out.println("Cannot find store");
+        }
         currentStore.getStoreView().exploreProducts();
     }
     public void main(){

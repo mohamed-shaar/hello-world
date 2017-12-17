@@ -72,6 +72,7 @@ public class Database {
         System.out.println(stores);
     }
     public static Store getStore(int index){
+        if(index<0||index>stores.size()) return null;
         return stores.get(index);
     }
 }

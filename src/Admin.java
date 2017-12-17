@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Admin extends Person {
-    protected AdminView adminView;
+    protected AdminView adminView=new AdminView();
     public Admin(String name, String email, String password) {
         super(name,email,password);
     }
