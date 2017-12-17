@@ -4,7 +4,6 @@ public class Product {
     protected String name;
     protected double price;
     protected String category;
-    public ProductView productView=new ProductView();
     public void setName(String name) {
         this.name = name;
     }
@@ -21,35 +20,24 @@ public class Product {
         this.brand = brand;
     }
     protected String brand;
-    protected int searchcounter;
-    protected int boughtcounter;
+    protected int searchcounter=0;
+    protected int boughtcounter=0;
     protected ProductController productController;
     public void increasesearchcounter(){searchcounter++;}
     public void increaseboughtcounter(){boughtcounter++;}
-
-    public int getSearchcounter() {
-        return searchcounter;
-    }
-
-    public int getBoughtcounter() {
-        return boughtcounter;
-    }
-
+    public int getSearchCounter(){return searchcounter;}
+    public int getBoughtCounter(){return boughtcounter;}
     public String getName() { return name; }
-
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", category='" + category + '\'' +
-                ", brand='" + brand + '\'' +
-                '}';
+    public String toString(){
+        return String.format(" %s",name);
+    }
+    public String print(){
+        return String.format(" %s, %s, %s, %f",name,category,brand,price);
     }
 }
 class ProductController{
     protected boolean purchase(Product product){
-        Customer current=HomePage.getCurrentCustomer();
+        Customer current=new Customer();
         return current.voucher.purchase(product);
     }
 }
@@ -66,7 +54,6 @@ class ProductView{
         }
         else System.out.println("No enough credits");
     }
-
     protected void exploreProduct(Product product){
         System.out.println("1.View details\n2.Purchase");
         Scanner cin=new Scanner(System.in);

@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -6,17 +7,18 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.Scanner;
 import java.util.Vector;
+
 public class Database {
     protected static Scanner cin;
     protected static PrintWriter cout;
 
-    protected static Vector<Customer>customers=new Vector<>();
-    protected static Vector<StoreOwner>storeOwners=new Vector<>();
-    protected static Vector<Admin>admins=new Vector<>();
-    protected static Vector<Product>products=new Vector<>();
-    protected static Vector<String>brands=new Vector<>();
-    protected static Vector<Store>stores=new Vector<>();
-    protected static Vector<String>suggestions=new Vector<>();
+    protected static Vector<Customer> customers = new Vector<>();
+    protected static Vector<StoreOwner> storeOwners = new Vector<>();
+    protected static Vector<Admin> admins = new Vector<>();
+    protected static Vector<Product> products = new Vector<>();
+    protected static Vector<String> brands = new Vector<>();
+    protected static Vector<Store> stores = new Vector<>();
+    protected static Vector<String> suggestions = new Vector<>();
 
     protected static File adminFile=new File("Admin-DB.txt");
     protected static File brandFile=new File("Brand-DB.txt");
@@ -26,79 +28,82 @@ public class Database {
     protected static File storeOwnerFile=new File("StoreOwner-DB.txt");
     protected static File suggestionFile=new File("Suggestion-DB.txt");
 
-
-    public static Person verifyLoginType(String email,String password){
-        for(Customer customer:customers){
-            if(customer.getEmail().equals(email)&&customer.getPassword().equals(password)){
+    public static Person verifyLoginType(String email, String password) {
+        Person p=null;
+        for (Customer customer : customers) {
+            if (customer.getEmail().equals(email) && customer.getPassword().equals(password)) {
+                customer.setType("customer");
                 return customer;
             }
         }
-        for(StoreOwner storeOwner:storeOwners){
-            if(storeOwner.getEmail().equals(email)&&storeOwner.getPassword().equals(password)){
+        for (StoreOwner storeOwner : storeOwners) {
+            if (storeOwner.getEmail().equals(email) && storeOwner.getPassword().equals(password)) {
+                storeOwner.setType("storeOwner");
                 return storeOwner;
             }
         }
-        for(Admin admin:admins){
-            if(admin.getEmail().equals(email)&&admin.getPassword().equals(password)){
+        for (Admin admin : admins) {
+            if (admin.getEmail().equals(email) && admin.getPassword().equals(password)) {
+                admin.setType("admin");
                 return admin;
             }
         }
         return null;
     }
-    public static void addCustomer(Customer customer){
+    public static void addCustomer(Customer customer) {
         customers.add(customer);
     }
-    public static void addStoreOwner(StoreOwner storeOwner){
+    public static void addStoreOwner(StoreOwner storeOwner) {
         storeOwners.add(storeOwner);
     }
-    public static void addAdmin(Admin admin){
+    public static void addAdmin(Admin admin) {
         admins.add(admin);
     }
-    public static void addProduct(Product product){
+    public static void addProduct(Product product) {
         products.add(product);
     }
-    public static void addBrand(String brand){
+    public static void addBrand(String brand) {
         brands.add(brand);
     }
-    public static void addStore(Store store){
+    public static void addStore(Store store) {
         stores.add(store);
     }
-    public static void addSuggestion(String suggestion){
+    public static void addSuggestion(String suggestion) {
         suggestions.add(suggestion);
     }
-    public static void removeBrand(String brand){
+    public static void removeBrand(String brand) {
         brands.remove(brand);
     }
-    public static boolean checkEmailAvailability(String email){
-        for(Customer customer:customers){
-            if(customer.getEmail().equals(email)){
+    public static boolean checkEmailAvailability(String email) {
+        for (Customer customer : customers) {
+            if (customer.getEmail().equals(email)) {
                 return true;
             }
         }
-        for(StoreOwner storeOwner:storeOwners){
-            if(storeOwner.getEmail().equals(email)){
+        for (StoreOwner storeOwner : storeOwners) {
+            if (storeOwner.getEmail().equals(email)) {
                 return true;
             }
         }
-        for(Admin admin:admins){
-            if(admin.getEmail().equals(email)){
+        for (Admin admin : admins) {
+            if (admin.getEmail().equals(email)) {
                 return true;
             }
         }
         return false;
     }
-    public static void viewStores(){
-        for(Store store:stores){
-            System.out.println(store);
+    public static void viewStores(JTextArea store) {
+        for(int i =0;i<stores.size();i++){
+            store.append(stores.get(i).getName()+"  ");
         }
     }
-    public static Store getStore(int index){
-        if(index<0||index>stores.size()) return null;
+    public static Store getStore(int index) {
+        if (index < 0 || index > stores.size()) return null;
         return stores.get(index);
     }
     public static void viewCounters(){
         for(Product product:products){
-            System.out.println(product.getName()+" Number of views: "+product.getSearchcounter()+" Number of buys: "+product.getBoughtcounter());
+            System.out.println(product.getName()+" Number of views: "+product.getSearchCounter()+" Number of buys: "+product.getBoughtCounter());
 
         }
     }
@@ -106,7 +111,7 @@ public class Database {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
-                return Integer.compare(o2.getSearchcounter(),o1.getSearchcounter());
+                return Integer.compare(o2.getSearchCounter(),o1.getSearchCounter());
             }
         });
         System.out.println(products.get(0).getName()+" viewed "+products.get(0).searchcounter+" times");
@@ -115,7 +120,7 @@ public class Database {
         Collections.sort(products, new Comparator<Product>() {
             @Override
             public int compare(Product o1, Product o2) {
-                return Integer.compare(o2.getBoughtcounter(),o1.getBoughtcounter());
+                return Integer.compare(o2.getBoughtCounter(),o1.getBoughtCounter());
             }
         });
         System.out.println(products.get(0).getName()+" bought "+products.get(0).boughtcounter+" times");
@@ -206,7 +211,7 @@ public class Database {
 
     public static void saveCustomers(){
         try {
-            cout=new PrintWriter(new FileOutputStream(customerFile,true ));
+            cout=new PrintWriter(new FileOutputStream(customerFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -217,7 +222,7 @@ public class Database {
     }
     public static void saveStoreOwners(){
         try {
-            cout=new PrintWriter(new FileOutputStream(storeOwnerFile,true ));
+            cout=new PrintWriter(new FileOutputStream(storeOwnerFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -228,7 +233,7 @@ public class Database {
     }
     public static void saveAdmins(){
         try {
-            cout=new PrintWriter(new FileOutputStream(adminFile,true ));
+            cout=new PrintWriter(new FileOutputStream(adminFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -239,7 +244,7 @@ public class Database {
     }
     public static void saveStores(){
         try {
-            cout=new PrintWriter(new FileOutputStream(storeFile,true ));
+            cout=new PrintWriter(new FileOutputStream(storeFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -250,7 +255,7 @@ public class Database {
     }
     public static void saveProducts(){
         try {
-            cout=new PrintWriter(new FileOutputStream(productFile,true ));
+            cout=new PrintWriter(new FileOutputStream(productFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -261,7 +266,7 @@ public class Database {
     }
     public static void saveBrands(){
         try {
-            cout=new PrintWriter(new FileOutputStream(brandFile,true ));
+            cout=new PrintWriter(new FileOutputStream(brandFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -272,7 +277,7 @@ public class Database {
     }
     public static void saveSuggestions(){
         try {
-            cout=new PrintWriter(new FileOutputStream(suggestionFile,true ));
+            cout=new PrintWriter(new FileOutputStream(suggestionFile,false ));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
@@ -282,6 +287,7 @@ public class Database {
         cout.close();
     }
     public static void saveAll(){
+        System.out.println("here");
         saveAdmins();
         saveCustomers();
         saveStoreOwners();

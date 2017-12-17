@@ -1,33 +1,38 @@
+import javax.xml.crypto.Data;
 import java.util.Scanner;
 import java.util.Vector;
+
 class StoreOwner extends Person {
-    protected StoreOwnerView storeOwnerView=new StoreOwnerView();
+    protected StoreOwnerView storeOwnerView = new StoreOwnerView();
+    public StoreOwner() {
+    }
     public StoreOwner(String name, String email, String password) {
-        super(name,email,password);
+        super(name, email, password);
     }
     public void getView() {
         storeOwnerView.main();
     }
 }
-class StoreOwnerController{
-    protected Vector<Store>stores=new Vector<>();
-    public void addStore(Store store){
+
+class StoreOwnerController {
+    protected Vector<Store> stores=new Vector<>();
+    public void addStore(Store store) {
         stores.add(store);
         Database.addStore(store);
     }
-    public Store findStore(String storeName){
-        for(Store store:stores){
-            if(store.getName().equals(storeName)){
+    public Store findStore(String storeName) {
+        for (Store store : stores) {
+            if (store.getName().equals(storeName)) {
                 return store;
             }
         }
         return null;
     }
-    public void addSuggestion(String suggestion){
+    public void addSuggestion(String suggestion) {
         Database.addSuggestion(suggestion);
     }
 }
-class StoreOwnerView{
+class StoreOwnerView {
     protected StoreOwnerController storeOwnerController=new StoreOwnerController();
     public void addStore(){
         Scanner cin=new Scanner(System.in);
@@ -38,6 +43,8 @@ class StoreOwnerView{
         System.out.println("Enter store address (enter null in case of online stores): ");
         String address=cin.nextLine();
         storeOwnerController.addStore(new Store(name,type,address));
+        System.out.println(name+" store has been created successfully!");
+        Database.saveAll();
     }
     public void addProduct(){
         Scanner cin=new Scanner(System.in);

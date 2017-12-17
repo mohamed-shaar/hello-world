@@ -1,87 +1,107 @@
+import javax.swing.*;
 import java.util.Scanner;
+
 public class Admin extends Person {
-    protected AdminView adminView=new AdminView();
+    protected AdminView adminView = new AdminView();
+    public Admin(){}
     public Admin(String name, String email, String password) {
-        super(name,email,password);
+        super(name, email, password);
     }
     public void getView() {
         adminView.main();
     }
-
 }
-class AdminController{
-    public void addBrand(String brand){
+
+class AdminController {
+    public void addBrand(String brand) {
         Database.addBrand(brand);
     }
-    public void addProduct(Product product){
+    public void addProduct(Product product) {
         Database.addProduct(product);
     }
-    public void removeBrand(String brand){
+    public void removeBrand(String brand) {
         Database.removeBrand(brand);
     }
-    public void provideVouchers(Customer customer){
+    public void provideVouchers(Customer customer) {
         customer.voucher.points++;
     }
 }
-class AdminView{
-    protected AdminController adminController=new AdminController();
-    static void commands(){
-        System.out.println("1. Add product\n2. Add brand" +
-                "\n3. Provide vouchers\n4. Explore stores\n5. View suggestions\n6. Exit ");}
-    protected void addProduct(){
-        Scanner cin=new Scanner(System.in);
-        System.out.print("Enter product name: ");
-        String name=cin.nextLine();
-        System.out.print("Enter product category: ");
-        String category=cin.nextLine();
-        System.out.print("Enter product brand: ");
-        String brand=cin.nextLine();
-        System.out.print("Enter product price: ");
-        String price=cin.nextLine();
-        adminController.addProduct(new Product(name,Double.parseDouble(price),category,brand));
-        System.out.println("Product has been added!");
+
+
+class AdminView {
+    public void main() {
+        boolean x = true;
+        Scanner scan = new Scanner(System.in);
+        while (x) {
+            commands();
+            switch (scan.nextInt()) {
+                case 1:
+                    this.addProduct();
+                case 2:
+                    this.addBrand();
+                case 3:
+                    this.provideVouchers();
+                case 4:
+                    x = false;
+                default:
+                    System.out.println("enter something ");
+
+            }
+        }
     }
-    protected void addBrand(){
-        Scanner cin=new Scanner(System.in);
-        System.out.print("Enter brand name: ");
-        String name=cin.nextLine();
+    protected AdminController adminController = new AdminController();
+    static void commands() {
+        System.out.println("1. add product\n2. add brand" +
+                "\n3. provide vouchers\n4. Exit ");
+    }
+    public void addProduct() {
+        String name, category, brand, price;
+        prod product = new prod();
+        JFrame frame = new JFrame("product");
+        frame.setContentPane(product.product);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+        name = product.name.getText();
+        category = product.category.getText();
+        brand = product.brand.getText();
+        price = product.price.getText();
+        adminController.addProduct(new Product(name, Double.parseDouble(price), category, brand));
+    }
+    public void addBrand() {
+        bran brand = new bran();
+        JFrame frame = new JFrame("brand");
+        frame.setContentPane(brand.brand);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+        String name =brand.name.getText();
         adminController.addBrand(new String(name));
-        System.out.println("Brand has been added!");
     }
-    protected void provideVouchers(){
-        Scanner scan=new Scanner(System.in);
-        System.out.println("enter customer Email");
-        String mail=scan.nextLine();
-        System.out.println("enter number of points");
+    public void provideVouchers() {
+        vouch voucher=new vouch();
+        JFrame frame = new JFrame("voucher card");
+        frame.setContentPane(voucher.voucher);
+        //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setSize(400, 300);
+        frame.setVisible(true);
+        String mail =voucher.email.getText() ;
+        String points=voucher.points.getText();
 
-        int point=scan.nextInt();
+        Integer point = Integer.parseInt(points);
 
-        for(int i=0;i<Database.customers.size();i++){
-            if(mail.equals(Database.customers.get(i).email)){
+        for (int i = 0; i < Database.customers.size(); i++) {
+            if (mail.equals(Database.customers.get(i).email)) {
                 adminController.provideVouchers(Database.customers.get(i));
             }
         }
-    }
-    protected void exploreStores(){}
-    protected void viewSuggestions(){
-        System.out.println(Database.suggestions);
-    }
-    public  void main() {
-        boolean x=true;
-        Scanner scan= new Scanner(System.in);
-        while(x){
-            commands();
-            switch (scan.nextInt()){
-                case 1: this.addProduct();break;
-                case 2: this.addBrand();break;
-                case 3: this.provideVouchers();break;
-                case 4: this.exploreStores();break;
-                case 5: this.viewSuggestions();break;
-                case 6: x=false;break;
-                default:System.out.println("enter something ");
-                    
-            }
-        }
-    }
 
+    }
+    public void removeBrand(){
+        String brandName=JOptionPane.showInputDialog("Enter brand name");
+        adminController.removeBrand(brandName);
+    }
 }

@@ -1,76 +1,48 @@
-import java.util.Scanner;
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.*;
 
 public class HomePage {
-    public static Person currentUser=null;
-    public static Customer getCurrentCustomer(){
-        return new Customer(currentUser.name,currentUser.email,currentUser.password);
+    private static JFrame frame1= new JFrame("Welcome");
+    private JPanel welcome;
+    private JButton loginButton;
+    private JButton registerButton;
+
+    public HomePage() {
+        loginButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                login login=new login();
+                JFrame frame = new JFrame("Login");
+                frame.setContentPane(login.login);
+                //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setSize(400, 300);
+                frame.setVisible(true);
+            }
+        });
+        registerButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JFrame frame = new JFrame("Register");
+                frame.setContentPane(new Register().Register);
+                //frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                frame.pack();
+                frame.setSize(400, 300);
+                frame.setVisible(true);
+            }
+        });
     }
-    private static boolean login(){
-        Scanner cin=new Scanner(System.in);
-        System.out.print("Enter email: ");
-        String email=cin.nextLine();
-        System.out.print("Enter password: ");
-        String password=cin.nextLine();
-        currentUser= Database.verifyLoginType(email,password);
-        return currentUser!=null;
-    }
-    private static boolean register(){
-        Scanner cin=new Scanner(System.in);
-        System.out.println("1.Customer\n2.StoreOwner\n3.Admin");
-        String choice=cin.nextLine();
-        System.out.print("Enter name: ");
-        String name=cin.nextLine();
-        System.out.print("Enter email: ");
-        String email=cin.nextLine();
-        System.out.print("Enter password: ");
-        String password=cin.nextLine();
-        if(Database.checkEmailAvailability(email)){
-            return false;
-        }
-        if(choice.equals("1")){
-            Database.addCustomer(new Customer(name,email,password));
-        }
-        else if(choice.equals("2")){
-            Database.addStoreOwner(new StoreOwner(name,email,password));
-        }
-        else if(choice.equals("3")){
-            Database.addAdmin(new Admin(name,email,password));
-        }
-        return true;
-    }
-    private static void welcomeMessage(){
-        System.out.println("************");
-        System.out.println("*1.login   *\n*2.Register*\n*3.Exit    *");
-        System.out.println("************");
-    }
+
+
     public static void main(String[] args) {
         Database.loadAll();
-        Scanner cin=new Scanner(System.in);
-        while(true){
-            welcomeMessage();
-            int choice=cin.nextInt();
-            if(choice==1){
-                if(login()){
-                    System.out.println("login successfully");
-                    System.out.println("Welcome back "+currentUser.getName());
-                    currentUser.getView();
-                }
-                else{
-                    System.out.println("login failed");
-                }
-            }
-            else if(choice==2){
-                if(register()){
-                    System.out.println("Registered successfully");
-                }
-                else{
-                    System.out.println("Registration failed");
-                }
-            }
-            else if(choice==3){
-                break;
-            }
-        }
-        Database.saveAll();
+        frame1.setContentPane(new HomePage().welcome);
+        frame1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame1.pack();
+        frame1.setSize(400, 300);
+        frame1.setVisible(true);
     }
+
 }
