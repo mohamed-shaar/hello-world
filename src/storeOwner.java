@@ -1,3 +1,4 @@
+import javax.swing.*;
 import javax.xml.crypto.Data;
 import java.util.Scanner;
 import java.util.Vector;
@@ -60,11 +61,10 @@ class StoreOwnerView {
         }
     }
     public void suggestAddingProductToDatabase(){
-        Scanner cin=new Scanner(System.in);
-        System.out.println("Enter product name and a brief description\nAdmin should revise your suggestion within 24 hours.");
-        String suggestion=cin.nextLine();
+        owner own = new owner();
+        String suggestion = JOptionPane.showInputDialog("Enter product name and a brief description\nAdmin should revise your suggestion within 24 hours.");
         storeOwnerController.addSuggestion(suggestion);
-        System.out.println("Your suggestion has been sent!");
+        JOptionPane.showMessageDialog(own.store_owner, "Your suggestion has been sent!");
     }
     public void exploreStores(){
 

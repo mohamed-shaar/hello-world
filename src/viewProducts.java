@@ -35,9 +35,9 @@ public class viewProducts {
                 if (currentProduct == null) {
                     JOptionPane.showMessageDialog(explore,"Cannot find!");
                 }else {
-                    JOptionPane.showMessageDialog(explore,currentProduct.toString());
+                    JOptionPane.showMessageDialog(explore,currentProduct.productView.print());
                     currentProduct.productView.viewDetails(currentProduct);
-                    product.append(currentProduct.print());
+                    product.append(currentProduct.productView.print());
                 }
             }
         });
@@ -49,7 +49,7 @@ public class viewProducts {
                 if (currentProduct == null) {
                     JOptionPane.showMessageDialog(explore,"Cannot find!");
                 }else {
-                    if(!new Customer().voucher.purchase(currentProduct)){
+                    if(!login.currentCustomer.voucher.purchase(currentProduct)){
                         JOptionPane.showMessageDialog(explore,"Transaction has failed!");
                     }
                     else{

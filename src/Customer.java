@@ -6,7 +6,7 @@ import java.util.Vector;
 public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
-    protected CustomerView customerView = new CustomerView();
+    protected CustomerView customerView = new CustomerView(this);
     protected Voucher voucher = new Voucher(0);
     public void getView() {
         customerView.main();
@@ -29,6 +29,10 @@ class CustomerController {
 
 class CustomerView {
     protected CustomerController customerController = new CustomerController();
+    Customer currentCustomer;
+    CustomerView(Customer customer){
+        currentCustomer=customer;
+    }
     public void suggestAddingProductToDatabase() {
         cust customer = new cust();
         String suggestion = JOptionPane.showInputDialog("Enter product name and a brief description\nAdmin should revise your suggestion within 24 hours.");

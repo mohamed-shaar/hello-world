@@ -8,6 +8,8 @@ public class owner {
     public JButton suggestProductButton;
     public JLabel label;
     public JPanel store_owner;
+    private JButton productViewsbtn;
+    private JButton mostViewedbtn;
     public StoreOwner owner=new StoreOwner();
 
     public owner() {
@@ -30,6 +32,18 @@ public class owner {
             public void actionPerformed(ActionEvent e) {
                 owner.storeOwnerView.suggestAddingProductToDatabase();
 
+            }
+        });
+        productViewsbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                owner.storeOwnerView.exploreViews();
+            }
+        });
+        mostViewedbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                owner.storeOwnerView.getMostViewed();
             }
         });
     }

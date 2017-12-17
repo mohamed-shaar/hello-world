@@ -8,6 +8,7 @@ public class login {
     public JTextField password;
     public JButton loginButton;
     public JPanel login;
+    public static Customer currentCustomer;
 
 
     public login() {
@@ -19,6 +20,7 @@ public class login {
                 Email = email.getText();
                 pass = password.getText();
                 p = Database.verifyLoginType(Email, pass);
+                currentCustomer=new Customer(p.name,p.email,p.password);
                 if (p == null) {
                     JOptionPane.showMessageDialog(login, "login failed");
                 } else if (p.getType() == "customer") {

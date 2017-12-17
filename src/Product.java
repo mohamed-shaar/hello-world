@@ -4,7 +4,7 @@ public class Product {
     protected String name;
     protected double price;
     protected String category;
-    public ProductView productView=new ProductView();
+    public ProductView productView=new ProductView(this);
     public void setName(String name) {
         this.name = name;
     }
@@ -29,12 +29,7 @@ public class Product {
     public int getSearchCounter(){return searchcounter;}
     public int getBoughtCounter(){return boughtcounter;}
     public String getName() { return name; }
-    public String toString(){
-        return String.format(" %s",name);
-    }
-    public String print(){
-        return String.format(" %s, %s, %s, %f",name,category,brand,price);
-    }
+
 }
 class ProductController{
     protected boolean purchase(Product product){
@@ -43,7 +38,17 @@ class ProductController{
     }
 }
 class ProductView{
+    Product currentProduct;
     protected ProductController productController=new ProductController();
+    ProductView(Product product){
+        currentProduct=product;
+    }
+    public String toString(){
+        return String.format(" %s",currentProduct.name);
+    }
+    public String print(){
+        return String.format(" %s, %s, %s, %f",currentProduct.name,currentProduct.category,currentProduct.brand,currentProduct.price);
+    }
     protected String viewDetails(Product product){
         System.out.println(product);
         product.increasesearchcounter();
