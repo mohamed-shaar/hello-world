@@ -3,6 +3,7 @@ import java.util.Scanner;
 import java.util.Vector;
 
 public class Customer extends Person {
+    protected CustomerController control=new CustomerController();
     protected String address;
     protected int creditCardNumber;
     protected CustomerView customerView=new CustomerView();

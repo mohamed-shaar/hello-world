@@ -60,7 +60,11 @@ class StoreOwnerView{
         storeOwnerController.addSuggestion(suggestion);
         System.out.println("Your suggestion has been sent!");
     }
+<<<<<<< HEAD
     public static void main(){
+=======+
+    public static void main(String[] args){
+>>>>>>> origin/master
         while(true){
             System.out.println("Choose what you want to do\n1- add Stroe\n2- add Product\n3- suggest Product\n4- Exit");
             Scanner cin=new Scanner(System.in);
