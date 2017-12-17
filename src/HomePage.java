@@ -37,14 +37,16 @@ public class HomePage {
     }
     private static void welcomeMessage(){
         System.out.println("************");
-        System.out.println("*1.login****\n*2.Register*");
+        System.out.println("*1.login****\n*2.Register*\n*3.Exit*****");
         System.out.println("************");
     }
     public static void main(String[] args) {
+        Database.loadAll();
         Scanner cin=new Scanner(System.in);
         while(true){
             welcomeMessage();
-            if(cin.nextInt()==1){
+            int choice=cin.nextInt();
+            if(choice==1){
                 if(login()){
                     System.out.println("login successfully");
                     System.out.println("Welcome back "+currentUser.getName());
@@ -54,7 +56,7 @@ public class HomePage {
                     System.out.println("login failed");
                 }
             }
-            else{
+            else if(choice==2){
                 if(register()){
                     System.out.println("Registered successfully");
                 }
@@ -62,7 +64,10 @@ public class HomePage {
                     System.out.println("Registration failed");
                 }
             }
+            else if(choice==3){
+                break;
+            }
         }
-
+        Database.saveAll();
     }
 }

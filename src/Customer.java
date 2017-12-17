@@ -13,7 +13,6 @@ public class Customer extends Person {
     public Customer(String name, String email, String password) {
         super(name,email,password);
     }
-
 }
 class CustomerController{
     public boolean purchase(Voucher voucher,Product product){
@@ -44,7 +43,15 @@ class CustomerView{
         currentStore.getStoreView().exploreProducts();
     }
     public void main(){
-        exploreStores();
+        Scanner cin=new Scanner(System.in);
+        while(true){
+            System.out.println("1.Explore stores\n2.Suggest adding products");
+            switch (cin.nextInt()){
+                case 1:exploreStores();break;
+                case 2:suggestAddingProductToDatabase();break;
+                default:break;
+            }
+        }
 
     }
 }

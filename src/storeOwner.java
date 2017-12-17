@@ -10,7 +10,7 @@ class StoreOwner extends Person {
     }
 }
 class StoreOwnerController{
-    protected Vector<Store>stores;
+    protected Vector<Store>stores=new Vector<>();
     public void addStore(Store store){
         stores.add(store);
         Database.addStore(store);
@@ -28,8 +28,8 @@ class StoreOwnerController{
     }
 }
 class StoreOwnerView{
-    protected static StoreOwnerController storeOwnerController=new StoreOwnerController();
-    public static void addStore(){
+    protected StoreOwnerController storeOwnerController=new StoreOwnerController();
+    public void addStore(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter store name: ");
         String name=cin.nextLine();
@@ -39,7 +39,7 @@ class StoreOwnerView{
         String address=cin.nextLine();
         storeOwnerController.addStore(new Store(name,type,address));
     }
-    public static void addProduct(){
+    public void addProduct(){
         Scanner cin=new Scanner(System.in);
         System.out.print("Enter store name you would like to add product in it: ");
         String storeName=cin.nextLine();
@@ -52,23 +52,34 @@ class StoreOwnerView{
             System.out.println("Store not found");
         }
     }
-    public static void suggestAddingProductToDatabase(){
+    public void suggestAddingProductToDatabase(){
         Scanner cin=new Scanner(System.in);
         System.out.println("Enter product name and a brief description\nAdmin should revise your suggestion within 24 hours.");
         String suggestion=cin.nextLine();
         storeOwnerController.addSuggestion(suggestion);
         System.out.println("Your suggestion has been sent!");
     }
+    public void exploreStores(){}
+    public void exploreViews(){}
+    public void getMostViewed(){}
     public void main(){
         while(true){
-            System.out.println("Choose what you want to do\n1- add Stroe\n2- add Product\n3- suggest Product\n4- Exit");
+            System.out.println("Choose what you want to do\n1- Add Store\n2- Add Product\n3- Suggest Product\n4- Explore store" +
+                    "\n5- Explore views\n6- Get the most viewed\n7- Exit");
             Scanner cin=new Scanner(System.in);
-            if(cin.nextInt()==1){
+            int choice=cin.nextInt();
+            if(choice==1){
                 addStore();
-            }else if(cin.nextInt()==2){
+            }else if(choice==2){
                 addProduct();
-            }else if(cin.nextInt()==3){
+            }else if(choice==3){
                 suggestAddingProductToDatabase();
+            }else if(choice==4){
+                exploreStores();
+            }else if(choice==5){
+                exploreViews();
+            }else if(choice==6){
+                getMostViewed();
             }else{
                 break;
             }

@@ -32,6 +32,14 @@ public class Store {
         this.address = address;
     }
 
+    @Override
+    public String toString() {
+        return "Store{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", address='" + address + '\'' +
+                '}';
+    }
 }
 class StoreController{
     protected Vector<Product>products = new Vector<>();

@@ -25,6 +25,16 @@ public class Product {
     public void increasesearchcounter(){searchcounter++;}
     public void increaseboughtcounter(){boughtcounter++;}
     public String getName() { return name; }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
+    }
 }
 class ProductController{
     /*public Product returnsearchcounter(){
