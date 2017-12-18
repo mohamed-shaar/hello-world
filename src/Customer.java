@@ -7,7 +7,7 @@ public class Customer extends Person {
     protected String address;
     protected int creditCardNumber;
     protected CustomerView customerView = new CustomerView(this);
-    protected Voucher voucher = new Voucher(0);
+    protected Voucher voucher = new Voucher(20000);
     public void getView() {
         customerView.main();
     }

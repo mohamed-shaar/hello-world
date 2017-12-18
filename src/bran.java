@@ -11,6 +11,9 @@ public class bran {
         addBrandButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                AdminController adminController = new AdminController();
+                String Name =name.getText();
+                adminController.addBrand(new String(Name));
                 JOptionPane.showMessageDialog(brand,"Brand has been added!");
             }
         });

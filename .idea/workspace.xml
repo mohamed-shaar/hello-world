@@ -3,30 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="128fe90e-aad9-4d83-960c-3e110836ce14" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Admin-DB.txt" afterPath="$PROJECT_DIR$/Admin-DB.txt" />
+      <change beforePath="$PROJECT_DIR$/Products-DB.txt" afterPath="$PROJECT_DIR$/Products-DB.txt" />
       <change beforePath="$PROJECT_DIR$/Store-DB.txt" afterPath="$PROJECT_DIR$/Store-DB.txt" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/AdminView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/AdminView.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Customer.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Customer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/CustomerView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/CustomerView.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Database.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Database.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/Product.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/Product.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ProductController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ProductController.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ProductView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ProductView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwner.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwner.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerController.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerController.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreOwnerView.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/login$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/login$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/login.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/login.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/owner$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/owner$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/owner$2.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/owner$2.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/owner$3.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/owner$3.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/owner.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/owner.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/StoreView.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/StoreView.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ad$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ad$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ad$2.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ad$2.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ad$3.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ad$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ad$4.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ad$4.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/ad.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/ad.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/bran$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/bran$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/bran.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/bran.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/prod$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/prod$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/prod.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/prod.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts$2.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts$2.class" />
       <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts$3.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts$3.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/viewProducts.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/vouch$1.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/vouch$1.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/hello-world-1/vouch.class" afterPath="$PROJECT_DIR$/out/production/hello-world-1/vouch.class" />
+      <change beforePath="$PROJECT_DIR$/src/Admin.java" afterPath="$PROJECT_DIR$/src/Admin.java" />
       <change beforePath="$PROJECT_DIR$/src/Customer.java" afterPath="$PROJECT_DIR$/src/Customer.java" />
+      <change beforePath="$PROJECT_DIR$/src/Database.java" afterPath="$PROJECT_DIR$/src/Database.java" />
       <change beforePath="$PROJECT_DIR$/src/Product.java" afterPath="$PROJECT_DIR$/src/Product.java" />
-      <change beforePath="$PROJECT_DIR$/src/login.java" afterPath="$PROJECT_DIR$/src/login.java" />
-      <change beforePath="$PROJECT_DIR$/src/owner.form" afterPath="$PROJECT_DIR$/src/owner.form" />
-      <change beforePath="$PROJECT_DIR$/src/owner.java" afterPath="$PROJECT_DIR$/src/owner.java" />
+      <change beforePath="$PROJECT_DIR$/src/Store.java" afterPath="$PROJECT_DIR$/src/Store.java" />
+      <change beforePath="$PROJECT_DIR$/src/ad.form" afterPath="$PROJECT_DIR$/src/ad.form" />
+      <change beforePath="$PROJECT_DIR$/src/ad.java" afterPath="$PROJECT_DIR$/src/ad.java" />
+      <change beforePath="$PROJECT_DIR$/src/admin.form" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/bran.java" afterPath="$PROJECT_DIR$/src/bran.java" />
+      <change beforePath="$PROJECT_DIR$/src/customer.form" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/prod.java" afterPath="$PROJECT_DIR$/src/prod.java" />
       <change beforePath="$PROJECT_DIR$/src/storeOwner.java" afterPath="$PROJECT_DIR$/src/storeOwner.java" />
       <change beforePath="$PROJECT_DIR$/src/viewProducts.java" afterPath="$PROJECT_DIR$/src/viewProducts.java" />
+      <change beforePath="$PROJECT_DIR$/src/vouch.java" afterPath="$PROJECT_DIR$/src/vouch.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +56,86 @@
       <file leaf-file-name="cust.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cust.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="400">
               <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#698#699#0" expanded="true" />
+                <element signature="e#762#763#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Admin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-440">
+              <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <marker date="1513594381234" expanded="true" signature="2643:2645" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="prod.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/prod.form">
+          <provider selected="true" editor-type-id="ui-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HomePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Voucher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Voucher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Customer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+              <folding>
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#982#983#0" expanded="true" />
+                <marker date="1513597314489" expanded="true" signature="1805:1812" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,90 +147,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewProducts.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewProducts.java">
+      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="51" column="65" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
+            <state relative-caret-position="980">
+              <caret line="219" column="38" lean-forward="false" selection-start-line="219" selection-start-column="38" selection-end-line="219" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer-DB.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Customer-DB.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Customer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Customer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="39" column="91" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="39" selection-end-column="91" />
-              <folding>
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#978#979#0" expanded="true" />
-                <marker date="1513551564652" expanded="true" signature="1801:1808" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StoreOwner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StoreOwner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-860">
-              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-              <folding>
-                <element signature="method#addProduct#0;class#StoreOwnerView#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="owner.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/owner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-              <folding>
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="owner.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/owner.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewProducts.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/viewProducts.form">
-          <provider selected="true" editor-type-id="ui-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/login.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#verifyLoginType#0;class#Database#0" expanded="false" />
+                <element signature="method#checkEmailAvailability#0;class#Database#0" expanded="false" />
+                <element signature="method#viewStores#0;class#Database#0" expanded="false" />
+                <element signature="method#getStore#0;class#Database#0" expanded="false" />
+                <element signature="method#viewCounters#0;class#Database#0" expanded="false" />
+                <element signature="method#mostViewed#0;class#Database#0" expanded="false" />
+                <element signature="method#mostBought#0;class#Database#0" expanded="false" />
+                <element signature="method#getProductByName#0;class#Database#0" expanded="false" />
+                <element signature="method#loadCustomers#0;class#Database#0" expanded="false" />
+                <element signature="method#loadStoreOwners#0;class#Database#0" expanded="false" />
+                <element signature="method#loadAdmins#0;class#Database#0" expanded="false" />
+                <element signature="method#loadStores#0;class#Database#0" expanded="false" />
+                <element signature="method#loadBrand#0;class#Database#0" expanded="false" />
+                <element signature="method#loadProduct#0;class#Database#0" expanded="false" />
+                <element signature="method#loadSuggestions#0;class#Database#0" expanded="false" />
+                <element signature="method#loadAll#0;class#Database#0" expanded="false" />
+                <element signature="method#saveCustomers#0;class#Database#0" expanded="false" />
+                <element signature="method#saveStoreOwners#0;class#Database#0" expanded="false" />
+                <element signature="method#saveAdmins#0;class#Database#0" expanded="false" />
+                <element signature="method#saveStores#0;class#Database#0" expanded="false" />
+                <element signature="method#saveProducts#0;class#Database#0" expanded="false" />
+                <element signature="method#saveBrands#0;class#Database#0" expanded="false" />
+                <element signature="method#saveSuggestions#0;class#Database#0" expanded="false" />
+                <element signature="method#saveAll#0;class#Database#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -185,29 +221,29 @@
         <option value="$PROJECT_DIR$/src/Register.java" />
         <option value="$PROJECT_DIR$/src/product.form" />
         <option value="$PROJECT_DIR$/src/prod.form" />
-        <option value="$PROJECT_DIR$/src/prod.java" />
         <option value="$PROJECT_DIR$/src/bran.form" />
-        <option value="$PROJECT_DIR$/src/bran.java" />
         <option value="$PROJECT_DIR$/src/vouch.form" />
-        <option value="$PROJECT_DIR$/src/vouch.java" />
-        <option value="$PROJECT_DIR$/src/ad.form" />
         <option value="$PROJECT_DIR$/src/Person.java" />
-        <option value="$PROJECT_DIR$/src/ad.java" />
         <option value="$PROJECT_DIR$/src/cust.java" />
-        <option value="$PROJECT_DIR$/src/Admin.java" />
-        <option value="$PROJECT_DIR$/src/Database.java" />
         <option value="$PROJECT_DIR$/src/HomePage.java" />
         <option value="$PROJECT_DIR$/src/storeOwner.java" />
         <option value="$PROJECT_DIR$/src/cust.form" />
         <option value="$PROJECT_DIR$/src/viewProducts.form" />
-        <option value="$PROJECT_DIR$/src/Store.java" />
-        <option value="$PROJECT_DIR$/src/Product.java" />
         <option value="$PROJECT_DIR$/src/login.java" />
-        <option value="$PROJECT_DIR$/src/viewProducts.java" />
-        <option value="$PROJECT_DIR$/src/Customer.java" />
-        <option value="$PROJECT_DIR$/src/StoreOwner.java" />
         <option value="$PROJECT_DIR$/src/owner.form" />
         <option value="$PROJECT_DIR$/src/owner.java" />
+        <option value="$PROJECT_DIR$/src/ad.java" />
+        <option value="$PROJECT_DIR$/src/Product.java" />
+        <option value="$PROJECT_DIR$/src/StoreOwner.java" />
+        <option value="$PROJECT_DIR$/src/Store.java" />
+        <option value="$PROJECT_DIR$/src/Database.java" />
+        <option value="$PROJECT_DIR$/src/viewProducts.java" />
+        <option value="$PROJECT_DIR$/src/prod.java" />
+        <option value="$PROJECT_DIR$/src/ad.form" />
+        <option value="$PROJECT_DIR$/src/bran.java" />
+        <option value="$PROJECT_DIR$/src/Admin.java" />
+        <option value="$PROJECT_DIR$/src/vouch.java" />
+        <option value="$PROJECT_DIR$/src/Customer.java" />
       </list>
     </option>
   </component>
@@ -232,10 +268,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,18 +284,22 @@
               <item name="Shoptopia" type="b2602c69:ProjectViewProjectNode" />
               <item name="hello-world" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="StoreOwner.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="Admin.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="Shoptopia" type="b2602c69:ProjectViewProjectNode" />
               <item name="hello-world" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="owner" type="e9f4de52:FormNode" />
+              <item name="Customer.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -463,26 +499,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/owner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="30" column="70" lean-forward="false" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cust.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -497,7 +527,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -507,9 +537,9 @@
         <state relative-caret-position="44">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <marker date="1513551564652" expanded="true" signature="1801:1808" ph="{...}" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <marker date="1513597314489" expanded="true" signature="1805:1812" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -525,16 +555,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="method#addProduct#0;class#StoreOwnerView#0" expanded="false" />
-            <element signature="method#suggestAddingProductToDatabase#0;class#StoreOwnerView#0" expanded="false" />
-            <element signature="e#2534#2535#0" expanded="false" />
-            <element signature="e#2573#2574#0" expanded="false" />
-            <element signature="e#2606#2607#0" expanded="false" />
-            <element signature="e#2643#2644#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2713#2714#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +564,10 @@
         <state relative-caret-position="616">
           <caret line="30" column="70" lean-forward="true" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1546#1547#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -554,6 +578,8 @@
           <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -576,9 +602,9 @@
         <state relative-caret-position="682">
           <caret line="41" column="49" lean-forward="false" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
           <folding>
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <marker date="1513551564652" expanded="true" signature="1801:1808" ph="{...}" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <marker date="1513597314489" expanded="true" signature="1805:1812" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -588,7 +614,7 @@
         <state relative-caret-position="44">
           <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
           <folding>
-            <marker date="1513544881973" expanded="true" signature="3375:3377" ph="{...}" />
+            <marker date="1513594381234" expanded="true" signature="2643:2645" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -597,7 +623,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1144">
           <caret line="74" column="10" lean-forward="false" selection-start-line="74" selection-start-column="10" selection-end-line="74" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#1514#1515#0" expanded="false" />
+            <element signature="e#1553#1554#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -606,6 +635,31 @@
         <state relative-caret-position="1232">
           <caret line="74" column="31" lean-forward="true" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
           <folding>
+            <element signature="method#verifyLoginType#0;class#Database#0" expanded="false" />
+            <element signature="method#checkEmailAvailability#0;class#Database#0" expanded="false" />
+            <element signature="method#viewStores#0;class#Database#0" expanded="false" />
+            <element signature="method#getStore#0;class#Database#0" expanded="false" />
+            <element signature="method#viewCounters#0;class#Database#0" expanded="false" />
+            <element signature="method#mostViewed#0;class#Database#0" expanded="false" />
+            <element signature="class#4012:4223" expanded="false" />
+            <element signature="method#mostBought#0;class#Database#0" expanded="false" />
+            <element signature="class#4413:4624" expanded="false" />
+            <element signature="method#getProductByName#0;class#Database#0" expanded="false" />
+            <element signature="method#loadCustomers#0;class#Database#0" expanded="false" />
+            <element signature="method#loadStoreOwners#0;class#Database#0" expanded="false" />
+            <element signature="method#loadAdmins#0;class#Database#0" expanded="false" />
+            <element signature="method#loadStores#0;class#Database#0" expanded="false" />
+            <element signature="method#loadBrand#0;class#Database#0" expanded="false" />
+            <element signature="method#loadProduct#0;class#Database#0" expanded="false" />
+            <element signature="method#loadSuggestions#0;class#Database#0" expanded="false" />
+            <element signature="method#loadAll#0;class#Database#0" expanded="false" />
+            <element signature="method#saveCustomers#0;class#Database#0" expanded="false" />
+            <element signature="method#saveStoreOwners#0;class#Database#0" expanded="false" />
+            <element signature="method#saveAdmins#0;class#Database#0" expanded="false" />
+            <element signature="method#saveStores#0;class#Database#0" expanded="false" />
+            <element signature="method#saveProducts#0;class#Database#0" expanded="false" />
+            <element signature="method#saveBrands#0;class#Database#0" expanded="false" />
+            <element signature="method#saveSuggestions#0;class#Database#0" expanded="false" />
             <element signature="method#saveAll#0;class#Database#0" expanded="false" />
           </folding>
         </state>
@@ -623,16 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="method#addProduct#0;class#StoreOwnerView#0" expanded="false" />
-            <element signature="method#suggestAddingProductToDatabase#0;class#StoreOwnerView#0" expanded="false" />
-            <element signature="e#2534#2535#0" expanded="false" />
-            <element signature="e#2573#2574#0" expanded="false" />
-            <element signature="e#2606#2607#0" expanded="false" />
-            <element signature="e#2643#2644#0" expanded="false" />
-            <element signature="e#2676#2677#0" expanded="false" />
-            <element signature="e#2713#2714#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -640,14 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Voucher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -666,18 +703,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
+    <entry file="file://$PROJECT_DIR$/src/HomePage.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Customer-DB.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Admin-DB.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin.form" />
+    <entry file="file://$PROJECT_DIR$/src/customer.form" />
     <entry file="file://$PROJECT_DIR$/src/product.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prod.java">
+    <entry file="file://$PROJECT_DIR$/src/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="81" lean-forward="false" selection-start-line="16" selection-start-column="81" selection-end-line="16" selection-end-column="81" />
+        <state relative-caret-position="500">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
+            <element signature="method#Product#0;class#Product#0" expanded="false" />
+            <element signature="e#1519#1520#0" expanded="false" />
+            <element signature="e#1557#1558#0" expanded="false" />
+            <element signature="method#exploreProduct#0;class#ProductView#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StoreOwner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="940">
+          <caret line="56" column="27" lean-forward="false" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -688,15 +773,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bran.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="74" lean-forward="false" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+        <state relative-caret-position="240">
+          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="800">
+          <caret line="65" column="68" lean-forward="false" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
+          <folding>
+            <element signature="e#2275#2276#0" expanded="false" />
+            <element signature="e#2360#2361#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ad.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/vouch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="320">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/viewProducts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,29 +818,36 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/prod.form">
+    <entry file="file://$PROJECT_DIR$/src/viewProducts.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Person.java">
+    <entry file="file://$PROJECT_DIR$/src/owner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="550">
+          <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
+          <folding>
+            <element signature="e#1257#1258#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
-    <entry file="file://$PROJECT_DIR$/src/HomePage.form">
+    <entry file="file://$PROJECT_DIR$/src/Store.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#1514#1515#0" expanded="false" />
+            <element signature="e#1553#1554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/owner.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin-DB.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomePage.java">
@@ -738,162 +858,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin.form">
+    <entry file="file://$PROJECT_DIR$/src/cust.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ad.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ad.java">
+    <entry file="file://$PROJECT_DIR$/src/cust.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="400">
+          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#514#515#0" expanded="false" />
-            <element signature="e#572#573#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#762#763#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Admin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="-440">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
           <folding>
-            <marker date="1513544881973" expanded="true" signature="3375:3377" ph="{...}" />
+            <marker date="1513594381234" expanded="true" signature="2643:2645" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.form">
+    <entry file="file://$PROJECT_DIR$/src/prod.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Database.java">
+    <entry file="file://$PROJECT_DIR$/src/prod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="12" column="38" lean-forward="false" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding>
-            <element signature="method#saveAll#0;class#Database#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Store.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-522">
-          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding>
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1553#1554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="55" lean-forward="false" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-          <folding>
-            <element signature="method#Product#0;class#Product#0" expanded="false" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="method#exploreProduct#0;class#ProductView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cust.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewProducts.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Customer-DB.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/login.java">
+    <entry file="file://$PROJECT_DIR$/src/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/viewProducts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="51" column="65" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cust.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/StoreOwner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-860">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="method#addProduct#0;class#StoreOwnerView#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="80">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="39" column="91" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="39" selection-end-column="91" />
+        <state relative-caret-position="120">
+          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
           <folding>
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#978#979#0" expanded="true" />
-            <marker date="1513551564652" expanded="true" signature="1801:1808" ph="{...}" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <marker date="1513597314489" expanded="true" signature="1805:1812" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/owner.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="219" column="38" lean-forward="false" selection-start-line="219" selection-start-column="38" selection-end-line="219" selection-end-column="38" />
+          <folding>
+            <element signature="method#verifyLoginType#0;class#Database#0" expanded="false" />
+            <element signature="method#checkEmailAvailability#0;class#Database#0" expanded="false" />
+            <element signature="method#viewStores#0;class#Database#0" expanded="false" />
+            <element signature="method#getStore#0;class#Database#0" expanded="false" />
+            <element signature="method#viewCounters#0;class#Database#0" expanded="false" />
+            <element signature="method#mostViewed#0;class#Database#0" expanded="false" />
+            <element signature="method#mostBought#0;class#Database#0" expanded="false" />
+            <element signature="method#getProductByName#0;class#Database#0" expanded="false" />
+            <element signature="method#loadCustomers#0;class#Database#0" expanded="false" />
+            <element signature="method#loadStoreOwners#0;class#Database#0" expanded="false" />
+            <element signature="method#loadAdmins#0;class#Database#0" expanded="false" />
+            <element signature="method#loadStores#0;class#Database#0" expanded="false" />
+            <element signature="method#loadBrand#0;class#Database#0" expanded="false" />
+            <element signature="method#loadProduct#0;class#Database#0" expanded="false" />
+            <element signature="method#loadSuggestions#0;class#Database#0" expanded="false" />
+            <element signature="method#loadAll#0;class#Database#0" expanded="false" />
+            <element signature="method#saveCustomers#0;class#Database#0" expanded="false" />
+            <element signature="method#saveStoreOwners#0;class#Database#0" expanded="false" />
+            <element signature="method#saveAdmins#0;class#Database#0" expanded="false" />
+            <element signature="method#saveStores#0;class#Database#0" expanded="false" />
+            <element signature="method#saveProducts#0;class#Database#0" expanded="false" />
+            <element signature="method#saveBrands#0;class#Database#0" expanded="false" />
+            <element signature="method#saveSuggestions#0;class#Database#0" expanded="false" />
+            <element signature="method#saveAll#0;class#Database#0" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/owner.java">
+    <entry file="file://$PROJECT_DIR$/src/Voucher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="39" column="52" lean-forward="true" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -14,7 +14,14 @@ public class prod {
         addButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(product,"Product has been added!");
+                String Name, Category, Brand, Price;
+                AdminController adminController = new AdminController();
+                Name = name.getText();
+                Category = category.getText();
+                Brand = brand.getText();
+                Price = price.getText();
+                adminController.addProduct(new Product(Name, Double.parseDouble(Price), Category, Brand));
+                JOptionPane.showMessageDialog(product, "Product has been added!");
             }
         });
     }

@@ -63,11 +63,7 @@ class AdminView {
         frame.pack();
         frame.setSize(400, 300);
         frame.setVisible(true);
-        name = product.name.getText();
-        category = product.category.getText();
-        brand = product.brand.getText();
-        price = product.price.getText();
-        adminController.addProduct(new Product(name, Double.parseDouble(price), category, brand));
+
     }
     public void addBrand() {
         bran brand = new bran();
@@ -77,8 +73,7 @@ class AdminView {
         frame.pack();
         frame.setSize(400, 300);
         frame.setVisible(true);
-        String name =brand.name.getText();
-        adminController.addBrand(new String(name));
+
     }
     public void provideVouchers() {
         vouch voucher=new vouch();
@@ -88,16 +83,7 @@ class AdminView {
         frame.pack();
         frame.setSize(400, 300);
         frame.setVisible(true);
-        String mail =voucher.email.getText() ;
-        String points=voucher.points.getText();
 
-        Integer point = Integer.parseInt(points);
-
-        for (int i = 0; i < Database.customers.size(); i++) {
-            if (mail.equals(Database.customers.get(i).email)) {
-                adminController.provideVouchers(Database.customers.get(i));
-            }
-        }
 
     }
     public void removeBrand(){

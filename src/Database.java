@@ -125,6 +125,14 @@ public class Database {
         });
         System.out.println(products.get(0).getName()+" bought "+products.get(0).boughtcounter+" times");
     }
+    public static Product getProductByName(String name){
+        for(Product product:products){
+            if(product.getName().equals(name)){
+                return product;
+            }
+        }
+        return null;
+    }
 
     public static void loadCustomers(){
         try {

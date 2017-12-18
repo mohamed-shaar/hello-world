@@ -59,6 +59,7 @@ class StoreOwnerView {
         else {
             System.out.println("Store not found");
         }
+        Database.saveAll();
     }
     public void suggestAddingProductToDatabase(){
         owner own = new owner();

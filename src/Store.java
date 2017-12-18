@@ -77,14 +77,14 @@ class StoreView {
         Scanner cin = new Scanner(System.in);
         System.out.print("Enter product name: ");
         String name = cin.nextLine();
-        System.out.print("Enter product category: ");
-        String category = cin.nextLine();
-        System.out.print("Enter product brand: ");
-        String brand = cin.nextLine();
-        System.out.print("Enter product price: ");
-        String price = cin.nextLine();
-        storeController.addProduct(new Product(name, Double.parseDouble(price), category, brand));
-        System.out.println("Product has been added!");
+        Product newProduct=Database.getProductByName(name);
+        if(newProduct!=null) {
+            storeController.addProduct(newProduct);
+            System.out.println("Product has been added!");
+        }
+        else{
+            System.out.println("Cannot find such a thing");
+        }
     }
 
     public void exploreProducts(JTextArea product) {

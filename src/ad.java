@@ -9,6 +9,10 @@ public class ad {
     public JLabel label;
     public JPanel admin;
     public JButton removeBrandButton;
+    private JButton viewSuggestionsbtn;
+    private JButton viewStores;
+    private JButton viewAllProductsButton;
+    private JButton viewAllBrandsButton;
     public Admin adm=new Admin();
 
 
@@ -36,6 +40,30 @@ public class ad {
             @Override
             public void actionPerformed(ActionEvent e) {
                 adm.adminView.removeBrand();
+            }
+        });
+        viewSuggestionsbtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(admin, Database.suggestions);
+            }
+        });
+        viewStores.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(admin, Database.stores);
+            }
+        });
+        viewAllProductsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(admin, Database.products);
+            }
+        });
+        viewAllBrandsButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JOptionPane.showMessageDialog(admin, Database.brands);
             }
         });
     }

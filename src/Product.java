@@ -30,6 +30,12 @@ public class Product {
     public int getBoughtCounter(){return boughtcounter;}
     public String getName() { return name; }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }
 class ProductController{
     protected boolean purchase(Product product){

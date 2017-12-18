@@ -38,6 +38,7 @@ public class viewProducts {
                     JOptionPane.showMessageDialog(explore,currentProduct.productView.print());
                     currentProduct.productView.viewDetails(currentProduct);
                     product.append(currentProduct.productView.print());
+                    currentProduct.increasesearchcounter();
                 }
             }
         });
@@ -54,6 +55,7 @@ public class viewProducts {
                     }
                     else{
                         JOptionPane.showMessageDialog(explore,"Transaction has succeeded!");
+                        currentProduct.increaseboughtcounter();
                     }
                 }
             }
